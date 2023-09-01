@@ -14,7 +14,6 @@
 .box4,
 .box5 {
   border-radius: 20px;
-  padding: 20px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -43,18 +42,24 @@
 }
 
 .red {
-  background-color: background-color #F84821;
-  border-radius: 50px;
+  background-color: #F84821;
+  border-radius: 50%;
+  margin: 10px;
+  padding: 0px 3px 0px 3px;
 }
 
 .gray {
   background-color: grey;
-  border-radius: 50px;
+  border-radius: 50%;
+  margin: 10px;
+  padding: 0px 3px 0px 3px;
 }
 
 .blue {
   background-color: cadetblue;
-  border-radius: 50px;
+  border-radius: 50%;
+  margin: 10px;
+  padding: 0px 3px 0px 3px;
 }
 
 .nav span {
@@ -103,9 +108,6 @@ body {
   background-image: url(image\(5\).png);
   width: 80%;
   margin: 20px;
-}
-.right-card image {
-  width: 100%;
 }
 
 .bottom {
@@ -158,4 +160,8 @@ img {
   height: 80px;
   overflow: hidden;
   width: 80px;
+}
+
+.boxes span {
+  background-color: #F84821;
 }/*# sourceMappingURL=style.css.map */
