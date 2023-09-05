@@ -56,9 +56,10 @@
   border-radius: 50px;
 }
 
-.nav span {
+.nav h2 span {
   background-color: #D5B9A5;
-  border-radius: 20px;
+  border-radius: 10px;
+  padding: 2px 0 2px 10px;
 }
 
 body {
@@ -139,11 +140,15 @@ body {
   justify-content: space-between;
 }
 
+.exit {
+  padding-top: 60px;
+}
+
 .nav h2 {
   padding-bottom: 60px;
 }
 
-.nav h4 {
+.nav .exit {
   margin-top: 40px;
 }
 
@@ -156,6 +161,10 @@ body {
   text-decoration: none;
   color: black;
   margin-bottom: 30px;
+}
+.pages a:hover {
+  background-color: grey;
+  border-radius: 10px;
 }
 
 .pages {
@@ -223,6 +232,7 @@ body {
   align-items: center;
   font-size: x-small;
   background-color: #FAFAFA;
+  position: relative;
   width: 100px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
@@ -234,13 +244,21 @@ body {
   align-items: center;
   font-size: x-small;
   background-color: #FAFAFA;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   width: 100px;
+  background-size: cover;
   background-image: url(light-blue.jpg);
 }
 
 .boxes h1 span {
   font-size: x-small;
   color: greenyellow;
+}
+
+.boxes h1 {
+  text-align: center;
+  padding-top: 45px;
+  padding-right: 30px;
 }
 
 .boxes .box2 h1 span {
@@ -252,4 +270,14 @@ img {
   height: 80px;
   overflow: hidden;
   width: 80px;
+}
+
+i {
+  background-color: #F84821;
+  padding: 10px;
+  border-radius: 10px;
+  color: #F2F0EF;
+  position: absolute;
+  left: 15px;
+  bottom: 85px;
 }/*# sourceMappingURL=style.css.map */

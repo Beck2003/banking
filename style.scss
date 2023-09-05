@@ -63,12 +63,13 @@
 }
 
 
-.nav span {
+.nav h2 span {
     background-color: #D5B9A5;
-    border-radius: 20px;
+    border-radius: 10px;
+    padding: 2px 0 2px 10px;
 }
 
-body {
+ body {
     background-color: #161B27;
 }
 
@@ -97,9 +98,9 @@ body {
 
     font-size: small;
     color: #F2F0EF;
-    padding : 20px 10px ;
+    padding: 20px 10px;
 
-    
+
     width: 40%;
 
     .left-card span {
@@ -141,13 +142,14 @@ body {
 
     background-image: url(image\(5\).png);
     background-size: cover;
-      width: 60%;
+    width: 60%;
+
     image {
         width: 100%;
     }
 
-   
-    
+
+
 
 
 
@@ -188,13 +190,13 @@ body {
 
 
 
-
+.exit { padding-top: 60px;}
 
 .nav h2 {
     padding-bottom: 60px;
 }
 
-.nav h4 {
+.nav .exit {
     margin-top: 40px;
 }
 
@@ -207,6 +209,12 @@ body {
     text-decoration: none;
     color: black;
     margin-bottom: 30px;
+      
+    &:hover {
+        background-color: grey;
+        border-radius: 10px;
+    }
+    
 }
 
 .pages {
@@ -242,8 +250,8 @@ body {
 .bottom {
     background-color: #D5B9A5;
     display: block;
-     margin:0;
-     padding: 0;
+    margin: 0;
+    padding: 0;
 
 
     .bar {
@@ -284,9 +292,10 @@ body {
         align-items: center;
         font-size: x-small;
         background-color: #FAFAFA;
-
+        position: relative;
         width: 100px;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
     }
 
     .box5 {
@@ -297,11 +306,15 @@ body {
         align-items: center;
         font-size: x-small;
         background-color: #FAFAFA;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 
         width: 100px;
+        background-size: cover;
         background-image: url(light-blue.jpg);
     }
 }
+
+
 
 
 .boxes h1 span {
@@ -309,12 +322,29 @@ body {
     color: greenyellow;
 }
 
+.boxes h1 {
+    text-align: center;
+    padding-top: 45px;
+    padding-right: 30px;
+}
+
 .boxes .box2 h1 span {
     color: red;
 }
+
 img {
     border-radius: 50%;
     height: 80px;
     overflow: hidden;
     width: 80px;
+}
+
+i {
+    background-color: v.$p-orange;
+    padding: 10px;
+    border-radius: 10px;
+    color: #F2F0EF;
+    position: absolute;
+    left: 15px;
+    bottom: 85px;
 }
