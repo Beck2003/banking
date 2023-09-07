@@ -4,6 +4,34 @@
   border: 0;
 }
 
+.container {
+  background-color: #FAFAFA;
+  display: flex;
+  margin-top: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 100%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-holder {
+  background-color: #F2F0EF;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  width: 100%;
+  padding: 25px;
+}
+
+.bottom {
+  margin-top: 20px;
+  display: flex;
+  background-color: #D5B9A5;
+  display: block;
+  height: 40%;
+  position: relative;
+}
+
 .container,
 .left-card,
 .right-card,
@@ -19,11 +47,14 @@
 
 .top-cards {
   display: flex;
+  height: 60%;
 }
 
 .top {
+  font-size: small;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 .nav {
@@ -66,74 +97,48 @@ body {
   background-color: #161B27;
 }
 
-.container {
-  background-color: #FAFAFA;
-  display: flex;
-  margin-left: 20%;
-  margin-right: 20%;
-  height: 60%;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.card-holder {
-  background-color: #F2F0EF;
-  height: 100%;
-  border-radius: 20px;
-  width: 100%;
-  padding: 25px;
-}
-
 .left-card {
   background-color: #161B27;
   font-size: small;
   color: #F2F0EF;
+  padding: 10px 10px;
+  width: 40%;
+}
+.left-card .left-card span {
+  border-radius: 100%;
+  justify-content: space-between;
+}
+.left-card .left-card-p {
+  display: flex;
+  justify-content: space-around;
   padding: 20px 10px;
-  width: 40%;
 }
-.left-card .left-card span {
-  border-radius: 100%;
-  justify-content: space-between;
-}
-.left-card .left-card-p {
-  display: flex;
-  justify-content: space-between;
+.left-card h3 {
+  margin: 30px 0 30px 0;
+  font-size: small;
 }
 
 .left-card {
   background-color: #161B27;
   font-size: small;
   color: #F2F0EF;
-  margin: 20px;
-  width: 40%;
-}
-.left-card .left-card span {
-  border-radius: 100%;
-  justify-content: space-between;
-}
-.left-card .left-card-p {
-  display: flex;
-  justify-content: space-between;
+  margin-right: 20px;
+  width: 30%;
 }
 
 .right-card {
   background-color: aqua;
   background-image: url(image\(5\).png);
   background-size: cover;
-  width: 60%;
+  width: 70%;
 }
 .right-card image {
   width: 100%;
 }
 
-.bottom {
-  background-color: #D5B9A5;
-  display: block;
-  height: 30%;
-}
 .bottom .bar {
   display: flex;
-  align-items: center;
-  margin: 10% 0;
+  margin: 5% 0;
 }
 
 .precentage {
@@ -163,8 +168,8 @@ body {
   margin-bottom: 30px;
 }
 .pages a:hover {
-  background-color: grey;
-  border-radius: 10px;
+  background-color: #F2F0EF;
+  border-radius: 15px;
 }
 
 .pages {
@@ -192,18 +197,6 @@ body {
   padding: 0px 3px 0px 3px;
 }
 
-.bottom {
-  background-color: #D5B9A5;
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-.bottom .bar {
-  display: flex;
-  align-items: center;
-  margin: 10% 0;
-}
-
 .boxes h1 span {
   font-size: x-small;
   color: greenyellow;
@@ -213,18 +206,15 @@ body {
   color: red;
 }
 
-.precentage {
-  justify-content: space-between;
-}
-
 .boxes {
   display: flex;
-  padding: 40px;
+  padding-top: 10px;
 }
 .boxes .box1,
 .boxes .box2,
 .boxes .box3,
 .boxes .box4 {
+  width: 100px;
   height: 100px;
   text-align: justify;
   margin: 10px;
@@ -233,21 +223,30 @@ body {
   font-size: x-small;
   background-color: #FAFAFA;
   position: relative;
-  width: 100px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 .boxes .box5 {
   height: 100px;
-  text-align: justify;
   margin: 10px;
-  justify-content: center;
-  align-items: center;
-  font-size: x-small;
+  font-size: xx-small;
   background-color: #FAFAFA;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   width: 100px;
   background-size: cover;
   background-image: url(light-blue.jpg);
+}
+.boxes .box5 h2 {
+  align-items: center;
+}
+
+.text {
+  padding-left: 20px;
+  height: 100px;
+}
+
+.box-text {
+  padding-top: 20px;
+  padding-left: 10px;
 }
 
 .boxes h1 span {
@@ -257,7 +256,7 @@ body {
 
 .boxes h1 {
   text-align: center;
-  padding-top: 45px;
+  padding-top: 30px;
   padding-right: 30px;
 }
 
@@ -272,6 +271,11 @@ img {
   width: 80px;
 }
 
+.light {
+  font-weight: 200;
+  font-size: medium;
+}
+
 i {
   background-color: #F84821;
   padding: 10px;
@@ -280,4 +284,18 @@ i {
   position: absolute;
   left: 15px;
   bottom: 85px;
+}
+
+.customer-holder {
+  display: flex;
+}
+
+.customer {
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
 }/*# sourceMappingURL=style.css.map */
